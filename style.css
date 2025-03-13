@@ -1,26 +1,35 @@
 nav {
-  border-radius: 50px;
-  background-color: aquamarine;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: gray;
+  font-weight: 500;
+  font-size: 30px;
+  position: fixed;
+  z-index: 1000;
+  
 }
 
 .custom-navbar {
-  width: 80%;
-  max-width: 1200px;
+  width: 60%;
+  max-width: 800px;
   padding: 10px 0 5px 0;
   margin-top: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
   padding-bottom: 10px;
-  display: flex;                
+  display: flex;              
   justify-content: center;      
   align-items: center;          
 }
 
 .navbar-nav {
   display: flex;                
-  justify-content: center;     
-  margin: 0;                   
+  justify-content: center;  
+  align-items: center;   
+  margin: 0 auto;                   
   padding: 0;                   
-  list-style: none;             
+  list-style: none;  
+  justify-content: space-between;           
 }
 
 .navbar-nav .nav-item {
@@ -30,16 +39,149 @@ nav {
 
 .navbar-nav .nav-item .nav-link {
   font-size: 14px;
-  padding: 8px 15px;           
+  padding: 8px 25px;          
   text-align: center;        
 }
 
 .navbar {
   display: flex;
-  justify-content: center;      
+  justify-content: center; 
+  width: 100%;     
 }
 
 .navbar-brand {
   font-size: 18px;
   margin-right: 20px;       
 }
+
+.slika{
+  margin-top: -80px;
+  background-color: black;
+  opacity: 80%; 
+}
+
+/* Reservation Section */
+.reservation {
+  text-align: center;
+  padding: 50px;
+  background: rgb(209, 233, 255);
+  margin: 6% 6%;
+  border-radius: 30px;
+}
+
+.reservation h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+#booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(209, 233, 255);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Form Groups */
+.form-group {
+  margin: 0 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+#booking-form input,
+#booking-form select {
+  width: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+#booking-form button {
+  background: #56cfff;
+  color: #003366;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+#booking-form button:hover {
+  background: #7c7c7c;
+}
+
+
+/* Special Offers Section */
+.offers {
+  text-align: center;
+  padding: 60px;
+  background: #f8f9fa;
+}
+
+.offers h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Offers Grid */
+.offers-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Offer Card */
+.offer {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.offer:hover {
+  transform: scale(1.05);
+}
+
+/* Offer Images */
+.offer img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Offer Text */
+.offer h3 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+

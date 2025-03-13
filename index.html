@@ -25,7 +25,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Novosti</a>
         </li>
-        <a class="navbar-brand" href="#">Logo</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Logo</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sobe</a>
         </li>
@@ -39,7 +41,77 @@
       
     </div>
   </nav>
-    
+
+
+  <div class="slika">
+    <img src="a.jpg" height="800" width="1280">
+  </div>
+
+<!-- Rezervacija -->
+
+  <section class="reservation">
+    <h2>Pronađi svoju sreću u našim sobama</h2>
+    <form id="booking-form">
+        <div class="form-group">
+            <label for="date">Datum:</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Osoba:</label>
+            <select id="guests">
+              <option value="2">0</option>
+              <option value="3">1</option>
+              <option value="4">2</option>
+              <option value="5">3</option>
+              <option value="6">4</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="guests">Djece:</label>
+          <select id="guests">
+              <option value="2">0</option>
+              <option value="3">1</option>
+              <option value="4">2</option>
+              <option value="5">3</option>
+              <option value="6">4</option>
+          </select>
+      </div>
+
+        <button type="submit">REZERVIŠI</button>
+    </form>
+</section>
+
+<!-- Ponude -->
+
+<section class="offers">
+  <h2>Specijalne ponude</h2>
+  <div class="offers-container">
+      <div class="offer">
+          <img src="honeymoon.jpg" alt="Medeni mjesec">
+          <h3>Medeni mjesec</h3>
+          <p class="price">€699 / noć</p>
+          <p>Indulge in a memorable one-time romantic dinner for two.</p>
+      </div>
+
+      <div class="offer">
+          <img src="meeting.jpg" alt="Sastanci">
+          <h3>Sastanci</h3>
+          <p class="price">€999 / noć</p>
+          <p>Experience an exclusively private environment to boost your productivity.</p>
+      </div>
+
+      <div class="offer">
+          <img src="romantic_dinner.jpg" alt="Romantične večere">
+          <h3>Romantične večere</h3>
+          <p class="price">€499 / noć</p>
+          <p>Indulge in a memorable one-time romantic dinner for two.</p>
+      </div>
+  </div>
+</section>
+
+  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
